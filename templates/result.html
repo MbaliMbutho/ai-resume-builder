@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <title>Generated Resume</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Summary for {{ name }}</h1>
+
+    <div class="info-block">
+      <p><strong>Job Title:</strong> {{ job }}</p>
+      <p><strong>Email:</strong> {{ email }}</p>
+      <p><strong>Phone:</strong> {{ phone }}</p>
+      <p><strong>Summary / Objective:</strong></p>
+      <p>{{ summary }}</p>
+      <p><strong>Skills:</strong> {{ skills }}</p>
+      <p><strong>Experience:</strong></p>
+      <p>{{ experience }}</p>
+      <p><strong>Education:</strong></p>
+      <p>{{ education }}</p>
+    </div>
+
+    <h2>AI Generated Summary</h2>
+    <pre class="resume-text">{{ resume }}</pre>
+
+    <div class="buttons">
+      <a href="/download" class="btn btn-download">Download as PDF</a>
+      <a href="/" class="btn btn-back">Back</a>
+    </div>
+  </div>
+</body>
+</html>

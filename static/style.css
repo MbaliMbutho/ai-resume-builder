@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://images.unsplash.com/photo-1602407294553-6ac9170b3ed0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdW1lfGVufDB8fDB8fHww');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #1a1a1a;
+}
+
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #00012a;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.resume-form label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #00012a;
+  font-size: 16px;
+}
+
+.resume-form input,
+.resume-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.resume-form input:focus,
+.resume-form textarea:focus {
+  border-color: #6bd425;
+  outline: none;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #00012a;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #6bd425;
+  color: #00012a;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
